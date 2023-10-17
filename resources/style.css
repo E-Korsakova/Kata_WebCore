@@ -171,6 +171,10 @@
         display: none;
     }
 
+    .break {
+        display: block;
+    }
+
     .post {
         height: 300px;
         margin-right: 20px;
@@ -203,7 +207,6 @@ body {
     background-color: #F8F8F8;
     padding: 0;
     margin: 0;
-
 }
 
 p {
@@ -211,9 +214,9 @@ p {
     margin: 0;
 }
 
+
 a:focus {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
+    border-color: #B8FFEC;
     background-color: #FFFFFF;
 }
 
@@ -355,8 +358,14 @@ a:focus {
     text-decoration: none;
     color: #7E7E82;
     font-size: 16px;
+    border: 2px solid #F8F8F8;
+    border-radius: 6px;
     padding: 5px 16px;
     margin-right: 5px;
+}
+
+.break {
+    flex-basis: 100%;
 }
 
 
