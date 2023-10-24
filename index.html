@@ -1,81 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        Построение сеток + БЭМ именование (Корсакова)
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCore Корсакова</title>
     <link href="resources/style.css" rel="stylesheet">
     <link href="resources/stylesheet.css" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-        <div class="header-buttons header-md--hidden">
-            <div class="header-menu-logo">
-                <button class="button button__icon-menu"></button>
-                <div class="logo logo-xs logo-sm">
+<body class="body">
+    <div class="menu">
+        <div class="menu-top">
+            <button class="button button-menu__ikon-open"></button>
+            <div class="logo">
+                <img src="resources/img/logo.svg" alt="Логотип компании">
+            </div>
+            <button class="button button-search__icon"></button>
+        </div>
+        <nav class="menu-links">
+            <a href="#"  class="text link menu__link">Ремонт техники</a>
+            <a href="#"  class="text link menu__link">Услуги и сервисы</a>
+            <a href="#"  class="text link menu__link">Корпоративным клиентам</a>
+            <a href="#"  class="text link menu__link">Продавцам техники</a>
+            <a href="#"  class="text link menu__link">Партнерам</a>
+            <a href="#"  class="text link menu__link">Производителям</a>
+            <a href="#"  class="text link menu__link">Наши сервисные центры</a>
+            <a href="#"  class="text link menu__link">Контакты</a>
+        </nav>
+        <div class="support">
+            <div class="contacts">
+                <div class="support-buttons">
+                    <button  class="button button__icon-call"></button>
+                    <button  class="button button__icon-chat"></button>
+                    <button  class="button button__icon-profile"></button>
+                </div>
+                <a class="text link email_link" href="#">mail@cps.com</a>
+                <p class="text phone">8 800 890 8900</p>
+            </div>
+            <div class="lang-switch">
+                <a href="#"  class="text link current lang">RU</a>
+                <a href="#"  class="text link lang">EN</a>
+                <a href="#"  class="text link lang">CH</a>
+            </div>
+        </div>
+    </div>
+    <div class="all-content">
+        <header class="header">
+            <div class="header-left">
+                <button class="button button-menu__ikon"></button>
+                <div class="logo">
                     <img src="resources/img/logo.svg" alt="Логотип компании">
                 </div>
             </div>
-
-        </div>
-        <div class="header-buttons header-buttons-md">
             <div hidden class="header-buttons-sm">
                 <button class="button button__icon-call"></button>
                 <button class="button button__icon-chat"></button>
                 <button class="button button__icon-profile"></button>
             </div>
-            <label class="button-with-text">
-                <span hidden class="text">Оставить заявку</span>
+            <div class="header-right">
                 <button class="button button__icon-repair"></button>
-            </label>
-            <label class="button-with-text">
-                <span hidden class="text">Статус ремонта</span>
                 <button class="button button__icon-check-status"></button>
-            </label>   
-        </div>
-    </header>
-    <main class="all-content">
-        <h1 class="title text">Услуги и сервисы</h1>
-        <nav class="nav text">
-            <a href="#" hidden class="nav-md nav__link">Ремонтируемые бренды</a>
-            <a href="#" class="nav-xs nav-sm nav-md nav__link">Ремонтируемые устройства</a>
-            <a href="#" class="nav-xs nav-sm nav__link">Дополнительные услуги</a>
-            <a href="#" hidden class="nav-sm nav-md nav__link">Цены на услуги</a>
-            <a href="#" hidden class="nav-md nav__link">Адреса сервисных центров</a>
-            <a href="#" hidden class="nav-sm nav-md nav__link">Специальные цены</a>
-            <div hidden class="break nav-md"></div>
-            <a href="#" hidden class="nav-md nav__link">Отзывы</a>
-            <div class="gradient"></div>
-        </nav>
-        
-        <article class="content">
-            <div class="post">
-                <div class="text post__article">
-                    <p>
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной 
-                    гарантией производителя.
-                    </p>
-                    <p>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
-                    что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
-                    что к нам обращаются по рекомендациям и, в свою очередь, советуют нас 
-                    родным и близким.
-                    </p>
-                </div>         
-                <nav class="nav text post__read-more">   
-                    <a href="#" class="nav__link read-more__link">
-                        <img src="resources/img/expand.svg" alt="">
-                        <span>Читать далее</span>
-                    </a>
-                </nav>
             </div>
-            <div class="image">
-                <img src="resources/img/image.jpg" width="100%" alt="Табличка с логотипом компании">
+        </header>
+        <main class="content">
+            <div class="content-top">
+                <h1 class="title text">Услуги и сервисы</h1>
+                <div hidden class="service-buttons">
+                    <label class="button-with-text">
+                        <span class="text">Оставить заявку</span>
+                        <button class="button button__icon-repair"></button>
+                    </label>
+                    <label class="button-with-text">
+                        <span class="text">Статус ремонта</span>
+                        <button class="button button__icon-check-status"></button>
+                    </label> 
+                </div>
             </div>
-        </article>
-    </main>
+            <nav class="nav nav-links">
+                <div class="gradient-left"></div>
+                <a href="#" hidden class="text link nav-md nav__link">Ремонтируемые бренды</a>
+                <a href="#" class="text link nav-xs nav-sm nav-md nav__link">Ремонтируемые устройства</a>
+                <a href="#" class="text link nav-xs nav-sm nav__link">Дополнительные услуги</a>
+                <a href="#" hidden class="text link nav-sm nav-md nav__link">Цены на услуги</a>
+                <a href="#" hidden class="text link nav-md nav__link">Адреса сервисных центров</a>
+                <a href="#" hidden class="text link nav-sm nav-md nav__link">Специальные цены</a>
+                <div hidden class="break nav-md"></div>
+                <a href="#" hidden class="text link nav-md nav__link">Отзывы</a>
+                <div class="gradient-right"></div>
+            </nav>
+            <article class="article">
+                <div class="post">
+                    <div class="text post__article">
+                        <p>
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной 
+                        гарантией производителя.
+                        </p>
+                        <p>
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+                        что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
+                        что к нам обращаются по рекомендациям и, в свою очередь, советуют нас 
+                        родным и близким.
+                        </p>
+                    </div>         
+                    <nav class="nav post__read-more">   
+                        <a href="#" class="text link read-more__link">
+                            <img src="resources/img/expand.svg" alt="">
+                            <span>Читать далее</span>
+                        </a>
+                    </nav>
+                </div>
+                <div class="image">
+                    <img src="resources/img/image.jpg" width="100%" alt="Табличка с логотипом компании">
+                </div>
+            </article>
+        </main>
+    </div>
 </body>
 </html>
