@@ -259,18 +259,19 @@ a:focus {
     display: block;
 }
 
-.menu__link:first-child {
+.menu__link:nth-child(2) {
     color: #7E7E82;
+    position: relative;
 }
 
-.menu__link:first-child::before {
+.menu__link:nth-child(2)::before {
     content: "";
     border-left: 8px solid #41F6D7;
     height: 40px;
     border-radius: 4px;
     position: absolute;
     left: -4px;
-    top: 122.5px;
+    top: 5px;
 }
 
 .support {
@@ -466,10 +467,11 @@ a:focus {
         right: 0;
     }
 
-    .menu__link:first-child::before {
+    .menu__link:nth-child(2)::before {
         border-left: 4px solid #41F6D7;
+        border-radius: 2px;
         left: 0px;
-        top: 110px;
+        top: 2px;
     }
 
     .all-content {
